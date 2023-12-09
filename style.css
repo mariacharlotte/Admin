@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    padding-left: 250px;
+    padding-right: 20px;
+}
+.leftsidebar .sidebar{
+    width: 230px;
+    height: 100vh;
+    background-color: powderblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+}
+.leftsidebar .sidebar .profile{
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+.leftsidebar .sidebar .profile img{
+    max-width: 100%;
+    height: 180px;
+}
+.leftsidebar .sidebar .profile h1{
+    font-size: 15pt;
+    /* color: white; */
+    margin: 10px 0 5px;
+}
+.leftsidebar .sidebar .profile p{
+    font-size: 13pt;
+    /* color: white; */
+}
+.leftsidebar .sidebar ul{
+    border-top: 1px solid grey;
+}
+.leftsidebar .sidebar ul li a{
+    color: black;
+    padding: 15px 30px;
+    display: block;
+}
+.leftsidebar .sidebar ul li a:hover{
+    background-color: #90a3ad;
+    color: #fff;
+    border-right: 2px solid black;
+}
+
+.leftsidebar .sidebar ul li a span.icon{
+    display: inline-block;
+    width: 30px;
+}
+
+/* Product List Style start */
+
+.firstdiv{
+    width: 100%;
+    height: 100px;
+    background-color: powderblue;
+}
+.seconddiv{
+    height: auto;
+    margin: 20px 0;
+    background-color: powderblue;
+}
+.seconddiv .text1{
+    margin: 20px;
+    display: inline-block;
+}
+.seconddiv #addbtn{
+    width: 70px;
+    margin: 20px;
+    padding: 10px;
+
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    float: right;
+}
+.seconddiv .tbstyle{
+    padding: 10px;
+}
+.seconddiv .tbstyle table{
+    width: 100%;
+/*    height: 500px;*/
+    border: 1px solid black;
+}
+.seconddiv .tbstyle table th,td{
+    padding: 10px;
+    border: 1px solid black;
+}
+.seconddiv .tbstyle table th{
+    height: 50px;
+}
+.seconddiv .tbstyle table td:first-child{
+    text-align: center;
+}
+@media screen and (max-width:960px){
+    .seconddiv .tbstyle{
+        overflow-x: auto;
+    }
+}
+
+
+/*To make a table responsive, we can set the 
+property of overflow-x:auto; in the div which covers the table. */
+
+
+/* Home's App Product Info part */
+.seconddiv{
+    font-weight: bold;
+}
+.seconddiv ::placeholder, .seconddiv textarea{
+    color: grey;
+    font-weight: bold;
+}
+.seconddiv #apptext{
+    padding: 30px 10px;
+}
+.seconddiv .formdiv{
+    padding: 10px;
+    color: grey;
+    font-size: small;
+    box-sizing: border-box;
+}
+.seconddiv .formdiv input, .selectbox,.formdiv textarea{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    color: grey;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid grey; 
+    border-radius: 5px;   
+    outline: none;
+}
+.seconddiv .formdiv .btndiv{
+    display: flex;
+    justify-content: end;
+}
+.seconddiv .formdiv #savebtn{
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(48, 188, 239);
+    outline: none;
+    border: none;
+}
+
+
+/* Register.html style */
+
+.seconddiv .formarea{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.seconddiv .formarea input, .formarea textarea, .formarea select, .formarea fieldset{
+    margin: 3px;
+    padding: 10px;
+}
+.formarea fieldset{
+    padding: 20px 10px;
+}
+.seconddiv .btndiv{
+    grid-column-start: 2;
+    display: flex;
+    justify-content: end;
+}
+.seconddiv #regbtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(1, 169, 1);
+    outline: none;
+    border: none;
+}
